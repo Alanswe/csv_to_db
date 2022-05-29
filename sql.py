@@ -59,7 +59,7 @@ class Sql():
         consulta = f"insert into {tabla}({campos[:-1]}) values ({valores[:-1]});"
         return consulta
         
-    def create(self, consulta):#por pobar
+    def create(self, consulta):#por probar
         cnx = self.conectar()
         cur = cnx.cursor()
         cur.execute(consulta)
