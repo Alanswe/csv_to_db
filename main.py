@@ -1,9 +1,17 @@
 from app import Manejador
+import platform
 import os
 from pprint import pprint
 objeto = Manejador()
 
-limpiar_pantalla = os.system('clear')
+
+my_os = platform.system()
+
+if my_os == 'Windows':
+    limpiar_pantalla = os.system('cls')
+else:
+    limpiar_pantalla = os.system('clear')
+
 limpiar_pantalla
 
 # ---------- Mensajes y menús ----------
