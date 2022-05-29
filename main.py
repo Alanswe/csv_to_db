@@ -6,17 +6,18 @@ objeto = Manejador()
 limpiar_pantalla = os.system('clear')
 limpiar_pantalla
 
-
+# ---------- Mensajes y menús ----------
 menu = """¿Que desea hacer?
-1 - Guardar csv en Base de Datos
+1 - Guardar csv en Base de Datos (Después de una vez ejecutada, guarda repetidos cada vez que se ejecute esta opción)
 2 - Mostrar fila por nombre
 3 - Mostrar csv completo
 """
-encabezado = input(menu)
 nombre_para_busqueda = """¿Que nombre buscamos? """
-
 mensaje_exit = """Hasta luego lucarr"""
+# ---------- ----------
 
+
+encabezado = input(menu)
 
 if encabezado == '1':
     limpiar_pantalla
